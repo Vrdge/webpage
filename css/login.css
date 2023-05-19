@@ -1,0 +1,42 @@
+html {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+}
+.header_inner{
+    display: flex;
+    align-items: center;
+}
+ul{
+    display: flex;
+}
+li{
+    margin: 0 8vw;
+}
+.logo {
+    margin-left: 2vw;
+    font-size: 24px;
+    color: aliceblue;
+    font-family: 'Dancing Script', cursive;
+}
+.form{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: blue 2px solid;
+    border-radius: 24px;
+}
+input{
+    margin: 40px;
+    padding: 20px 40px;
+    border: blue solid 2px;
+     border-radius: 12px;
+}

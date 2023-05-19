@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Ysabeau:ital,wght@0,200;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau:ital,wght@0,200;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+html,
+body {
+  margin: 0;
+  font-family: 'Ysabeau', sans-serif;
+  background-color: #BBBBBB;
+}
+
+
+header {
+  background-image: url("https://blogimages.musement.com/2019/07/salvador-dali-67661_1280.jpg");
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  animation: none;
+}
+
+.header_inner {
+  display: flex;
+  top: 0;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 1000;
+  opacity: 1;
+}
+
+.href_decoration {
+  text-decoration: none;
+  color: #fff;
+}
+
+.logo {
+  margin: 0 2vw;
+  font-size: 24px;
+  color: aliceblue;
+  font-family: 'Raleway', sans-serif;
+}
+
+.login {
+  background-color: #1d1f22;
+
+  border-radius: 8px;
+  font-family: bold;
+}
+
+.login>a {
+  padding: 30px
+}
+
+
+.container_authors {
+  margin: 10vh 0;
+  padding: 3em 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.content_image_inner {
+  width: 100%;
+  border-radius: 24px;
+
+}
+
+.content_image_inner_bckg {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 24px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 100%;
+  padding: 2em;
+}
+
+.container_content {
+  display: flex;
+  width: 80%;
+  flex-wrap: wrap-reverse;
+}
+
+.biography {
+  color: aliceblue;
+  position: relative;
+  right: 20%;
+  top: 2em;
+  font-size: 108px;
+  font-weight: 900;
+  backdrop-filter: blur(8px);
+  border-radius: 24px;
+
+}
+
+.biography>h1 {
+  font-size: 36px;
+}
+
+footer {
+  bottom: 0;
+}
+
+.footer {
+  background-color: #333333;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 55px 50px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.footer .footer-left {
+  width: 45%;
+}
+
+.footer h3 {
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 36px;
+  margin: 0;
+}
+
+.footer h3 span {
+  color: #5383d3;
+}
+
+
+.footer .footer-links {
+  color: #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer .footer-company-name {
+  color: #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+
+.footer .footer-right {
+  width: 45%;
+  color: #ffffff;
+
+}
+
+.item {
+  scale: (0.5);
+
+}
+
+
+
+.wrapper {
+  display: flex;
+}
+
+.left_container,
+.right_container {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  border: #1d1f22 solid 2px;
+  flex-wrap: wrap;
+  padding: 4em;
+}
+
+.container_text {
+  font-size: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* burger */
+
+.menu-burger {
+  width: calc(100% - 4em);
+  height: 2em;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 2em;
+  margin: 0 2em;
+}
+
+.menu_item {
+  margin-right: 4em;
+  display: flex;
+  color: #fff;
+  font-size: 24px;
+}
+
+.menu_small_icon {
+  display: none;
+}
+
+.menu-small {
+  display: none;
+  height: 2em;
+}
+
+.menu_small_item {
+  display: none;
+}
+
+.stick1 {
+  width: 80%;
+  height: 5px;
+  background: rgb(227, 227, 227);
+}
+
+.stick2 {
+  width: 80%;
+  height: 5px;
+  background: rgb(227, 227, 227);
+}
+
+.stick3 {
+  width: 80%;
+  height: 5px;
+  background: rgb(227, 227, 227);
+}
+
+.inner {
+  padding: 1em 0 0 0;
+  width: 60%;
+  height: auto;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+@media (max-width: 950px) {
+  .logo {
+    margin: 0;
+    position: relative;
+    left: calc(50% - 2em);
+  }
+
+  .content_image_inner_bckg {
+    padding: 1rem;
+  }
+
+  .wrapper {
+    flex-wrap: wrap;
+  }
+
+  .reverse {
+    flex-wrap: wrap-reverse;
+  }
+
+  .biography {
+    left: 1rem;
+    top: 3em;
+    font-size: 72px;
+    font-weight: 900;
+  }
+
+  .biography>h1 {
+    font-size: 24px;
+  }
+
+  .menu-burger {
+    display: none;
+  }
+
+  .left_container,
+  .right_container {
+    padding: 4em;
+  }
+  .container_text {
+    font-size: 36px;
+  }
+  .right_container>h1 {
+    font-size: 20px;
+  }
+
+  .left_container>h1 {
+    font-size: 20px;
+  }
+  .menu-small {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 50%;
+    padding: 0;
+    position: absolute;
+    background: white;
+    transform: translateX(-100%);
+  }
+
+  .menu_small_item {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu_small_item:first-child {
+    padding-top: calc(50px + 2em);
+  }
+
+  .menu_small_icon {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    z-index: 1;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .inner {
+    padding-top: calc(50px + 2em);
+  }
+
+  .inner p {
+    margin: 0
+  }
+
+  .footer {
+    font-family: 'Raleway', sans-serif;
+    display: block;
+  }
+
+  .footer .footer-left,
+  .footer .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+}
+
+@media (max-width:1000px)and (orientation: landscape) {
+  .biography {
+    top: 1em;
+  }
+
+  .left_container,
+  .right_container {
+    padding: 10em;
+  }
+
+  .content_image_inner_bckg {
+    padding: 3em;
+  }
+
+  .container_text {
+    font-size: 36px;
+  }
+
+  .right_container>h1 {
+    font-size: 20px;
+  }
+
+  .left_container>h1 {
+    font-size: 20px;
+  }
+}
