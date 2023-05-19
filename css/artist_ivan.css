@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Ysabeau:ital,wght@0,200;1,200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ysabeau:ital,wght@0,200;1,200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
@@ -9,15 +10,11 @@ body {
   background-color: #2a6f97 ;
 }
 
-html {
-  animation: 0.3s;
-
-}
 
 header {
   background-image: url("https://cdn2.oceansbridge.com/2018/02/21080545/Ocean-Ivan-Constantinovich-Aivazovsky-Oil-Painting.jpg");
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -33,12 +30,13 @@ header {
   opacity: 1;
 }
 
-.href_decoration{
+.href_decoration {
   text-decoration: none;
   color: #fff;
 }
+
 .logo {
-  margin-left: 2vw;
+  margin: 0 2vw;
   font-size: 24px;
   color: aliceblue;
   font-family: 'Raleway', sans-serif;
@@ -56,7 +54,16 @@ header {
 }
 
 
-
+.container_authors {
+  margin: 10vh 0;
+  padding: 3em 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  justify-content: space-around;
+  align-items: center;
+}
 
 .content_image_inner {
   width: 100%;
@@ -73,16 +80,29 @@ header {
   border: 1px solid rgba(255, 255, 255, 0.3);
   width: 100%;
   padding: 2em;
-
 }
 
 .container_content {
   display: flex;
   width: 80%;
-  justify-content: space-evenly;
   flex-wrap: wrap-reverse;
 }
 
+.biography {
+  color: aliceblue;
+  position: relative;
+  right: 20%;
+  top: 2em;
+  font-size: 108px;
+  font-weight: 900;
+  backdrop-filter: blur(8px);
+  border-radius: 24px;
+
+}
+
+.biography>h1 {
+  font-size: 36px;
+}
 
 footer {
   bottom: 0;
@@ -96,7 +116,6 @@ footer {
   text-align: left;
   font: bold 16px sans-serif;
   padding: 55px 50px;
-  margin-top: 80px;
   display: flex;
   justify-content: flex-end;
 }
@@ -154,25 +173,22 @@ footer {
 
 .wrapper {
   display: flex;
-  justify-content: space-between;
 }
 
 .left_container,
 .right_container {
-  aspect-ratio: 6/5.5;
   display: flex;
   align-content: center;
   justify-content: center;
   width: 100%;
   border: #1d1f22 solid 2px;
   flex-wrap: wrap;
-  padding: 100px;
-  color:#f5f5f5;
-
+  padding: 4em;
+  color: aliceblue;
 }
 
 .container_text {
-  font-size: 48px;
+  font-size: 40px;
 }
 
 
@@ -198,6 +214,7 @@ footer {
   justify-content: flex-end;
   align-items: center;
   padding: 2em;
+  margin: 0 2em;
 }
 
 .menu_item {
@@ -238,7 +255,7 @@ footer {
   background: rgb(227, 227, 227);
 }
 
-.inner {  
+.inner {
   padding: 1em 0 0 0;
   width: 60%;
   height: auto;
@@ -250,17 +267,11 @@ footer {
   align-items: center;
   min-height: 100vh;
   flex-direction: column;
-
-  flex-wrap: wrap;
+  flex-grow: 0;
+  flex-shrink: 0;
 }
 
-@media (max-width: 900px) and (orientation: landscape) {
-  .biography{
-    font-size: 48px;
-  }
-  .wrapper{
-    flex-wrap: wrap;
-  }
+@media (max-width: 950px) {
   .logo {
     margin: 0;
     position: relative;
@@ -268,14 +279,47 @@ footer {
   }
 
   .content_image_inner_bckg {
-    width: 300px;
+    padding: 1rem;
+  }
 
+  .wrapper {
+    flex-wrap: wrap;
+  }
+
+  .reverse {
+    flex-wrap: wrap-reverse;
+  }
+
+  .biography {
+
+    left: 1rem;
+    top: 3em;
+    font-size: 48px;
+    font-weight: 900;
+  }
+
+  .biography>h1 {
+    font-size: 20px;
   }
 
   .menu-burger {
     display: none;
   }
 
+  .left_container,
+  .right_container {
+    padding: 4em;
+  }
+  .container_text {
+    font-size: 36px;
+  }
+  .right_container>h1 {
+    font-size: 20px;
+  }
+
+  .left_container>h1 {
+    font-size: 20px;
+  }
   .menu-small {
     display: flex;
     flex-direction: column;
@@ -332,15 +376,30 @@ footer {
     text-align: center;
   }
 }
-.biography{
-  color:aliceblue;
-  position: relative;
-  top: 2em;
-  font-size:  48px;
-  font-weight: 900;
-  backdrop-filter: blur(6px);
 
-}
-.biography>h1{
-  font-size: 36px;
+@media (max-width:1000px)and (orientation: landscape) {
+  .biography {
+    top: 1em;
+  }
+
+  .left_container,
+  .right_container {
+    padding: 10em;
+  }
+
+  .content_image_inner_bckg {
+    padding: 3em;
+  }
+
+  .container_text {
+    font-size: 36px;
+  }
+
+  .right_container>h1 {
+    font-size: 20px;
+  }
+
+  .left_container>h1 {
+    font-size: 20px;
+  }
 }
