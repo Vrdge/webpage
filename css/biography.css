@@ -1,3 +1,8 @@
+
+
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Ysabeau:ital,wght@0,200;1,200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ysabeau:ital,wght@0,200;1,200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
@@ -5,19 +10,14 @@
 html,
 body {
   margin: 0;
-  padding: 0;
   font-family: 'Ysabeau', sans-serif;
-  background-color: #ffe9cc;
+  background-color: #FBC740;
 }
 
-html {
-  animation: 0.3s;
-
-}
 
 header {
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Vincent_Van_Gogh_-_Wheatfield_with_Crows.jpg/1280px-Vincent_Van_Gogh_-_Wheatfield_with_Crows.jpg");
-  width: 100%;
+    width: 100%;
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -34,12 +34,13 @@ header {
   opacity: 1;
 }
 
-.href_decoration{
+.href_decoration {
   text-decoration: none;
   color: #fff;
 }
+
 .logo {
-  margin-left: 2vw;
+  margin: 0 2vw;
   font-size: 24px;
   color: aliceblue;
   font-family: 'Raleway', sans-serif;
@@ -69,17 +70,12 @@ header {
 }
 
 .content_image_inner {
-  aspect-ratio: 3 / 4;
-  width: 80%;
-  position: relative;
-  left: 10%;
-  top: 10%;
+  width: 100%;
   border-radius: 24px;
 
 }
 
 .content_image_inner_bckg {
-  aspect-ratio: 3 / 4;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 24px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
@@ -87,31 +83,43 @@ header {
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   width: 100%;
-
+  padding: 2em;
 }
 
 .container_content {
-  aspect-ratio: 3/4;
   display: flex;
   width: 80%;
-  justify-content: space-evenly;
   flex-wrap: wrap-reverse;
 }
 
+.biography {
+  color: aliceblue;
+  position: relative;
+  right: 20%;
+  top: 2em;
+  font-size: 108px;
+  font-weight: 900;
+  backdrop-filter: blur(8px);
+  border-radius: 24px;
+
+}
+
+.biography>h1 {
+  font-size: 36px;
+}
 
 footer {
   bottom: 0;
 }
 
 .footer {
-  background-color: #D7A86E;
+  background-color: #C07F00;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   width: 100%;
   text-align: left;
   font: bold 16px sans-serif;
   padding: 55px 50px;
-  margin-top: 80px;
   display: flex;
   justify-content: flex-end;
 }
@@ -167,39 +175,23 @@ footer {
 
 
 
-@keyframes transitionIn {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-
-  }
-}
-
 .wrapper {
   display: flex;
-  justify-content: space-between;
 }
 
 .left_container,
 .right_container {
-  aspect-ratio: 6/5.5;
   display: flex;
   align-content: center;
   justify-content: center;
   width: 100%;
   border: #1d1f22 solid 2px;
   flex-wrap: wrap;
-  padding: 100px;
+  padding: 4em;
 }
 
 .container_text {
-  font-size: 48px;
+  font-size: 40px;
 }
 
 
@@ -225,6 +217,7 @@ footer {
   justify-content: flex-end;
   align-items: center;
   padding: 2em;
+  margin: 0 2em;
 }
 
 .menu_item {
@@ -281,25 +274,54 @@ footer {
   flex-shrink: 0;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 950px) {
   .logo {
     margin: 0;
     position: relative;
-    left: 40vw;
+    left: calc(50% - 2em);
   }
 
   .content_image_inner_bckg {
-    width: 300px;
-    aspect-ratio: 3/4;
-    left: auto;
+    padding: 1rem;
   }
 
+  .wrapper {
+    flex-wrap: wrap;
+  }
 
+  .reverse {
+    flex-wrap: wrap-reverse;
+  }
+
+  .biography {
+    left: 1rem;
+    top: 3em;
+    font-size: 72px;
+    font-weight: 900;
+  }
+
+  .biography>h1 {
+    font-size: 24px;
+  }
 
   .menu-burger {
     display: none;
   }
 
+  .left_container,
+  .right_container {
+    padding: 4em;
+  }
+  .container_text {
+    font-size: 36px;
+  }
+  .right_container>h1 {
+    font-size: 20px;
+  }
+
+  .left_container>h1 {
+    font-size: 20px;
+  }
   .menu-small {
     display: flex;
     flex-direction: column;
@@ -356,11 +378,30 @@ footer {
     text-align: center;
   }
 }
-.biography{
-  color:aliceblue;
-  position: relative;
-  right: 20%;
-  top: 2em;
-  font-size: 108px;
-  font-weight: 900;
+
+@media (max-width:1000px)and (orientation: landscape) {
+  .biography {
+    top: 1em;
+  }
+
+  .left_container,
+  .right_container {
+    padding: 10em;
+  }
+
+  .content_image_inner_bckg {
+    padding: 3em;
+  }
+
+  .container_text {
+    font-size: 36px;
+  }
+
+  .right_container>h1 {
+    font-size: 20px;
+  }
+
+  .left_container>h1 {
+    font-size: 20px;
+  }
 }

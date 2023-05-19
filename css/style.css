@@ -9,16 +9,21 @@ body {
   font-family: 'Ysabeau', sans-serif;
   background-color: #ffe9cc;
   scroll-behavior: smooth;
+
 }
 
+body {
+  background-image: url("https://static.vecteezy.com/system/resources/previews/015/806/668/original/brown-color-background-of-smooth-shapes-transition-from-dark-to-light-skin-color-abstract-modern-backgrond-design-free-vector.jpg");
+  background-attachment: fixed;
+}
 
-a{
+a {
   text-decoration: none;
   color: #8E3200;
 }
-.VanGogh{
 
-}
+.VanGogh {}
+
 header {
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Vincent_Van_Gogh_-_Wheatfield_with_Crows.jpg/1280px-Vincent_Van_Gogh_-_Wheatfield_with_Crows.jpg");
   width: 100%;
@@ -39,10 +44,11 @@ header {
   box-shadow: rgba(50, 50, 93, 0.01) 0px 20px 20px -20px;
 }
 
-.href_decoration{
+.href_decoration {
   text-decoration: none;
   color: white;
 }
+
 .logo {
   margin-left: 2vw;
   font-size: 24px;
@@ -67,6 +73,7 @@ header {
   border-bottom: solid rgb(62, 62, 62) 2px;
 
 }
+
 .container_authors {
   margin: 10vh 0;
   padding: 3em 0;
@@ -77,7 +84,8 @@ header {
   justify-content: space-around;
   align-items: center;
 }
-.font_weight{
+
+.font_weight {
   font-size: 6em;
   flex-wrap: wrap;
 }
@@ -103,17 +111,18 @@ header {
   width: 100%;
   border-radius: 24px;
   transition: .5s ease;
-  
+
 }
-.content_image_inner:hover{
+
+.content_image_inner:hover {
   transform: scale(1.01);
   filter: brightness(60%);
-} 
+}
 
 .content_image_inner_bckg {
   aspect-ratio: 3 / 4;
   background: rgba(255, 255, 255, 0.2);
-  border-radius:36px;
+  border-radius: 36px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
@@ -122,11 +131,12 @@ header {
   padding: 20px;
 
 }
-.text_block{
-    opacity: 1;
-    position: relative;
-    margin: 0 2em;
-    bottom: 50%;
+
+.text_block {
+  opacity: 1;
+  position: relative;
+  margin: 0 2em;
+  bottom: 50%;
 }
 
 .container_content {
@@ -137,17 +147,19 @@ header {
   flex-wrap: wrap-reverse;
 }
 
-.container_content_text{
+.container_content_text {
   color: #DCEDFF;
-  margin:  0 1em;
+  margin: 0 1em;
 }
+
 .info {
   position: relative;
 
 }
 
 .main {
-  max-height: 550px;;
+  max-height: 550px;
+  ;
   background-color: #292c2f;
   color: white;
   font-size: 38pt;
@@ -160,7 +172,7 @@ footer {
 }
 
 .footer {
-  background-color: #ecb464  ;
+  background-color: #ecb464;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   width: 100%;
@@ -187,14 +199,17 @@ footer {
 .footer h3 span {
   color: #8E3200;
 }
-#spn{
+
+#spn {
   color: white;
   text-decoration: none;
-  
+
 }
-.menu-select{
+
+.menu-select {
   color: unset;
 }
+
 .footer .footer-links {
   color: #8E3200;
   margin: 20px 0 12px;
@@ -228,9 +243,11 @@ footer {
   color: #8E3200;
 
 }
-.footer-right>a{
+
+.footer-right>a {
   text-decoration: none;
 }
+
 .item {
   scale: (0.5);
 
@@ -252,9 +269,9 @@ footer {
 }
 
 .item_wrapper {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 204, 168, 0.355);
   border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3  );
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -265,10 +282,11 @@ footer {
   display: flex;
   flex-direction: row;
 }
+
 swiper-slide {
   text-align: center;
   font-size: 18px;
-  display: flex;  
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -281,23 +299,25 @@ swiper-slide img {
 }
 
 .box_inner {
-  aspect-ratio: 1 /1 ;
+  aspect-ratio: 1 /1;
   width: 300px;
   display: flex;
-  
-} 
-.box_inner> img{
-    width: 100%;  
-    border-radius: 10px;
-    transition: .3s ease;
-    margin: 1em;
-    box-shadow: rgb(47, 48, 49) 0px 10px 10px -5px;
+
 }
-.box_inner> img:hover{
+
+.box_inner>img {
+  width: 100%;
+  border-radius: 10px;
+  transition: .3s ease;
+  margin: 1em;
+  box-shadow: rgb(47, 48, 49) 0px 10px 10px -5px;
+}
+
+.box_inner>img:hover {
   transform: scale(1.1);
 }
 
-.box{
+.box {
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(5px);
@@ -407,19 +427,20 @@ swiper-slide img {
 
 
 
-  .content_image_inner_bckg{
+  .content_image_inner_bckg {
     width: 16em;
-    
+
   }
 
-  .font_weight{
+  .font_weight {
     font-size: 36px;
     margin: 0;
-  }     
+  }
 
-.item_image{
-  transform: scale(0.95);
-}
+  .item_image {
+    transform: scale(0.95);
+  }
+
   .menu-burger {
     display: none;
   }
@@ -480,62 +501,66 @@ swiper-slide img {
     text-align: center;
   }
 }
-@media (max-width:950px) and (orientation: landscape){
-.content_image_inner_bckg{
-  width: 12em;
+
+@media (max-width:950px) and (orientation: landscape) {
+  .content_image_inner_bckg {
+    width: 12em;
+  }
+
+  swiper-container {
+    slides-per-view: 2;
+  }
+
+  .font_weight {
+    font-size: 36px;
+  }
 }
-swiper-container{
-  slides-per-view:2;
-}
-.font_weight{
-  font-size: 36px;
-}
-}
+
 @media (max-width: 1200px) and (orentation:landscape) {
-.font_weight{
-  font-size:48px;
-  flex-wrap: wrap;
-}
+  .font_weight {
+    font-size: 48px;
+    flex-wrap: wrap;
+  }
 
 
-.menu-burger {
-  display: none;
-}
+  .menu-burger {
+    display: none;
+  }
 
-.menu-small {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  width: 50%;
-  padding: 0;
-  position: absolute;
-  background: white;
-  transform: translateX(-100%);
-}
+  .menu-small {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 50%;
+    padding: 0;
+    position: absolute;
+    background: white;
+    transform: translateX(-100%);
+  }
 
-.menu_small_item {
-  height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  .menu_small_item {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-.menu_small_item:first-child {
-  padding-top: calc(50px + 2em);
-}
+  .menu_small_item:first-child {
+    padding-top: calc(50px + 2em);
+  }
 
-.menu_small_icon {
-  position: absolute;
-  top: 1em;
-  left: 1em;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  z-index: 1;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-}
+  .menu_small_icon {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    z-index: 1;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
 
 }
 
@@ -658,5 +683,3 @@ swiper-container{
     border-bottom: 1px solid #444;
   }
 } */
-
-
