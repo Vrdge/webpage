@@ -249,12 +249,11 @@ footer {
 }
 
 .item {
-  scale: (0.5);
-
+  aspect-ratio: 3/4;
 }
 
 .item_image {
-  transition: all .6s ease-in-out;
+  transition: all .3s ease-in-out;
   filter: brightness(80%);
   z-index: 7000;
   transform: scale(0.7);
@@ -276,6 +275,7 @@ footer {
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   transform: scale(0.8);
+  height: 100%;
 }
 
 .slider_container {
@@ -438,7 +438,7 @@ swiper-slide img {
   }
 
   .item_image {
-    transform: scale(0.95);
+    transform: scale(0.8);
   }
 
   .menu-burger {
@@ -507,9 +507,6 @@ swiper-slide img {
     width: 12em;
   }
 
-  swiper-container {
-    slides-per-view: 2;
-  }
 
   .font_weight {
     font-size: 36px;
