@@ -162,15 +162,17 @@ $(".container").on("touchend", function (event) {
 });
   
 
-function myFunction(x) {
-  switch (x) {
-    case x.matches:
-      $(".item_image").css({ width: "12em" });
-    default:  
-      break
+  function myFunction(x) {
+    switch (x) {
+      case x.matches:
+        $(".item_image").css({ width: "12em" });
+      default:  
+        break
+    }
   }
-}
 
-let x = window.matchMedia("(max-width: 700px)");
-myFunction(x); // Call listener function at run time
-x.addListener(myFunction); // Attach listener function on state changesz
+  let x = window.matchMedia("(max-width: 700px)");
+  myFunction(x); // Call listener function at run time
+  x.addListener(myFunction); // Attach listener function on state changes
+
+
