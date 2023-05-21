@@ -9,6 +9,7 @@ body {
   font-family: 'Ysabeau', sans-serif;
   background-color: #ffe9cc;
   scroll-behavior: smooth;
+  
 
 }
 
@@ -22,7 +23,6 @@ a {
   color: #8E3200;
 }
 
-.VanGogh {}
 
 header {
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Vincent_Van_Gogh_-_Wheatfield_with_Crows.jpg/1280px-Vincent_Van_Gogh_-_Wheatfield_with_Crows.jpg");
@@ -42,8 +42,16 @@ header {
   width: 100%;
   z-index: 9999;
   box-shadow: rgba(50, 50, 93, 0.01) 0px 20px 20px -20px;
+} 
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  flex-grow: 0;
+  flex-shrink: 0;
 }
-
 .href_decoration {
   text-decoration: none;
   color: white;
@@ -405,17 +413,9 @@ swiper-slide img {
   height: auto;
 }
 
-.container {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  min-height: 100vh;
-  flex-direction: column;
-  flex-grow: 0;
-  flex-shrink: 0;
-}
 
-@media (max-width: 450px) {
+
+@media (max-width: 700px) {
   .logo {
     margin: 0;
     position: relative;
@@ -444,7 +444,9 @@ swiper-slide img {
   .menu-burger {
     display: none;
   }
-
+  .item>h2{
+    font-size: 20px;
+  }
   .menu-small {
     display: flex;
     flex-direction: column;

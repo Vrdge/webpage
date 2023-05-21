@@ -160,13 +160,7 @@ $(".container").on("touchend", function (event) {
     backward();
   }
 });
-$(document).ready(function () {
-  $(".carousel").slick({
-    lazyLoad: "ondemand",
-    slidesToShow: 3,
-    slidesToScroll: 1,
-  });
-});
+  
 
 function myFunction(x) {
   switch (x) {
@@ -179,4 +173,4 @@ function myFunction(x) {
 
 let x = window.matchMedia("(max-width: 700px)");
 myFunction(x); // Call listener function at run time
-x.addListener(myFunction); // Attach listener function on state changes
+x.addListener(myFunction); // Attach listener function on state changesz
