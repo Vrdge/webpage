@@ -2,7 +2,7 @@ $(window).scroll(function () {
   let wScroll = $(this).scrollTop();
   const logosecond = document.querySelector(".spn");
   const logofirst = document.querySelector(".h3");
-
+  
   if (wScroll >= $(window).height() / 2) {
     anime({
       targets: ".header_inner",
