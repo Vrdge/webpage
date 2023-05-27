@@ -3,30 +3,30 @@
     box-sizing: border-box;
     margin: 0;
 }
-#ch{
-    
-}
-label{
-    display: inline-block;
-    cursor: pointer;
-    color: white;
-    background-color: #484848;
-    padding: 15px 25px;
-    border-radius: 12px;
+
+.read-more{
+    display: none;
 }
 
-.content{
-    display: none;
+#button{
+    padding: 20px 50px;
+    background-color: #5d6080;
+    font-size: 1em;
+    color: #DDE6ED;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
-.content h1{
-    color:#404258;
+#button:hover{
+    transform: scale(1.1);
 }
-#ch:checked ~ .content{
-    display: block;
+
+#button:active{
+    background-color: #404258;
 }
-#ch:checked ~ label{
-    display: none;
-}
+
+
+
 
 
 
