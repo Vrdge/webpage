@@ -16,6 +16,7 @@ body {
 body {
   background-image: url("https://static.vecteezy.com/system/resources/previews/015/806/668/original/brown-color-background-of-smooth-shapes-transition-from-dark-to-light-skin-color-abstract-modern-backgrond-design-free-vector.jpg");
   background-attachment: fixed;
+  background-size: cover;
 }
 
 a {
