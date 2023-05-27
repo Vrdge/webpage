@@ -4,7 +4,7 @@
     margin: 0;
 }
 #ch{
-    display: none;
+    
 }
 label{
     display: inline-block;
@@ -18,16 +18,15 @@ label{
 .content{
     display: none;
 }
+.content h1{
+    color:#404258;
+}
 #ch:checked ~ .content{
     display: block;
 }
-
 #ch:checked ~ label{
     display: none;
 }
-
-
-
 
 
 
@@ -41,7 +40,7 @@ label{
 .card img{
     border-radius: 12px;    
     transition: all ease 0.3s;
-    filter: brightness(80%);
+    filter: brightness(100%);
     box-shadow: rgba(0, 0, 0, 0.4) 0px 6px 8px, rgba(0, 0, 0, 0.3) 0px 14px 17px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 .card:hover{
@@ -49,7 +48,7 @@ label{
 }
 
 .card:hover img{
-    filter: brightness(100%);
+    filter: brightness(80%);
 }
 .card-content{
     width: 100%;
@@ -57,11 +56,15 @@ label{
     opacity: 0;
     display: flex;
     justify-content: center;
+    color: #DDE6ED;
+    font-size: 2em;
+    transition: all ease 0.3s;
+
 }
 .card:hover .card-content{
     position: absolute;
     opacity: 1;
-    bottom: 0;
+    bottom: 50px;
     font: 900;
 
 }
