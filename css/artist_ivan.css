@@ -8,7 +8,10 @@ body {
   font-family: 'Ysabeau', sans-serif;
   background-color: #2a6f97;
 }
-
+.content_image_inner:hover{
+  transition: all 0.7s ease;
+  transform:scale(1.05);
+}
 
 header {
   background-image: url("https://cdn2.oceansbridge.com/2018/02/21080545/Ocean-Ivan-Constantinovich-Aivazovsky-Oil-Painting.jpg");

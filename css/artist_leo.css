@@ -8,7 +8,10 @@ body {
   font-family: 'Ysabeau', sans-serif;
   background-color: #d99d29;
 }
-
+.content_image_inner:hover{
+  transition: all 0.7s ease;
+  transform:scale(1.05);
+}
 
 header {
   background-image: url("https://blog.singulart.com/wp-content/uploads/2019/08/tour_img-312981-148-1.jpg");

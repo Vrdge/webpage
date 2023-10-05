@@ -9,7 +9,10 @@ body {
   background-color: #BBBBBB;
 }
 
-
+.content_image_inner:hover{
+  transition: all 0.7s ease;
+  transform:scale(1.05);
+}
 header {
   background-image: url("https://blogimages.musement.com/2019/07/salvador-dali-67661_1280.jpg");
   width: 100%;
